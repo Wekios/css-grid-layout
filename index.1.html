@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Css Grids</title>
+
+    <style>
+        * {
+            overflow: hidden;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /* grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+            grid-gap: 1em
+        }
+
+        .wrapper>div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem error. Assumenda adipisci nihil accusantium
+            consectetur molestias sapiente eaque dolore nam architecto reprehenderit cum ex enim fugiat delectus pariatur,
+            magnam asperiores a laudantium aspernatur obcaecati eligendi mollitia molestiae! Quibusdam itaque quam, accusamus
+            dolore explicabo non nisi consequatur fugiat eligendi? Nobis odit eligendi ut ad repellendus, id, reprehenderit
+            assumenda unde laudantium praesentium iste harum necessitatibus officiis quas voluptatum ipsa? Dolorum neque
+            aliquid quidem cumque quasi facere necessitatibus sint a nostrum omnis?
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eveniet adipisci ratione nesciunt? Illo voluptatibus ut expedita.
+            Ipsa, quo suscipit nostrum vero tempora est a magnam mollitia atque architecto. Enim.
+        </div>
+
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, exercitationem error. Assumenda adipisci nihil accusantium
+            consectetur molestias sapiente eaque dolore nam architecto reprehenderit cum ex enim fugiat delectus pariatur,
+            magnam asperiores a laudantium aspernatur obcaecati eligendi mollitia molestiae! Quibusdam itaque quam, accusamus
+            dolore explicabo non nisi consequatur fugiat eligendi? Nobis odit eligendi ut ad repellendus, id, reprehenderit
+            assumenda unde laudantium praesentium iste harum necessitatibus officiis quas voluptatum ipsa? Dolorum neque
+            aliquid quidem cumque quasi facere necessitatibus sint a nostrum omnis?
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eveniet adipisci ratione nesciunt? Illo voluptatibus ut expedita.
+            Ipsa, quo suscipit nostrum vero tempora est a magnam mollitia atque architecto. Enim.
+        </div>
+
+    </div>
+</body>
+
+</html>

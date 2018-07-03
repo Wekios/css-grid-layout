@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Css Grids</title>
+
+    <style>
+        html {
+            font-size: 8px;
+        }
+
+        body {
+            font-size: 100%;
+            max-width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h4 {
+            font-size: 2.25rem;
+            font-weight: 900;
+            line-height: 1.28;
+            letter-spacing: normal;
+            font-family: sans-serif;
+        }
+
+        /* .grid-container {
+            margin: 0 auto;
+            display: grid;
+            width: 137.5rem;
+            grid-template-columns: 25rem 43rem 61.5rem;
+            grid-column-gap: 4rem;
+            align-items: baseline;
+        } */
+
+        .grid-container {
+            margin: 0 auto;
+            display: grid;
+            width: 137.5rem;
+            grid-template-columns: 25rem 43rem 61.5rem;
+            grid-template-rows: 17rem 57rem;
+            grid-column-gap: 4rem;
+        }
+
+        .ap1 {
+            grid-row-start: 2;
+            grid-column-start: 1;
+        }
+
+        .ap2 {
+            grid-row-start: 2;
+            grid-column-start: 2;
+        }
+
+        .ap3 {
+            grid-row-start: 1;
+            grid-column-start: 3;
+
+        }
+
+        .ap4 {
+            grid-row-start: 3;
+            grid-column-start: 3;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="article-preview ap1">
+            <img src="https://picsum.photos/200/264">
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, numquam.</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex labore velit corporis totam culpa delectus unde
+                aperiam saepe? Doloremque minus nobis voluptas necessitatibus omnis ut quisquam. Repudiandae, corrupti exercitationem
+                cumque non minima dicta laudantium! Aut inventore doloribus beatae sint quos.</p>
+        </div>
+        <div class="article-preview ap2">
+            <img src="https://picsum.photos/344/456">
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, numquam.</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex labore velit corporis totam culpa delectus unde
+                aperiam saepe? Doloremque minus nobis voluptas necessitatibus omnis ut quisquam. Repudiandae, corrupti exercitationem
+                cumque non minima dicta laudantium! Aut inventore doloribus beatae sint quos.</p>
+        </div>
+        <div class="article-preview ap3">
+            <img src="https://picsum.photos/492/400">
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, numquam.</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex labore velit corporis totam culpa delectus unde
+                aperiam saepe? Doloremque minus nobis voluptas necessitatibus omnis ut quisquam. Repudiandae, corrupti exercitationem
+                cumque non minima dicta laudantium! Aut inventore doloribus beatae sint quos.</p>
+        </div>
+        <div class="article-preview ap4">
+            <img src="https://picsum.photos/272/224">
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, numquam.</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex labore velit corporis totam culpa delectus unde
+                aperiam saepe? Doloremque minus nobis voluptas necessitatibus omnis ut quisquam. Repudiandae, corrupti exercitationem
+                cumque non minima dicta laudantium! Aut inventore doloribus beatae sint quos.</p>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
