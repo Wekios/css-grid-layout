@@ -25,6 +25,12 @@ h4 {
   line-height: 1.28;
   letter-spacing: normal;
   font-family: sans-serif;
+  //   padding-top: 1rem;
+  @include breakpoint(desktop) {
+    padding-top: 3rem;
+    font-size: 1.8rem;
+    line-height: 1.28;
+  }
 }
 
 p {
@@ -57,10 +63,8 @@ p {
   margin: 0 auto;
   display: grid;
   width: 33.6rem;
-  padding: 5rem 0;
   align-items: baseline;
   grid-template-columns: 15.6rem 16rem;
-  grid-template-rows: 2;
   grid-column-gap: 2rem;
 
   @include breakpoint(desktop) {
