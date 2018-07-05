@@ -1,5 +1,7 @@
+body {
+  background-color: #eee;
+}
 // ----- Wrappers
-
 #main {
   width: 100%;
   max-width: 100%;
@@ -7,36 +9,23 @@
   padding: 0;
 }
 
-// IMAGES WITH DIVS //
+button {
+  background: #ddd;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
 
-// @include breakpoint(desktop) {
-
-//   .article-preview1-img {
-//     background: center/cover no-repeat url("https://picsum.photos/200/264");
-//     height: 26.5rem;
-//   }
-//   .article-preview2-img {
-//     background: center/cover no-repeat url("https://picsum.photos/344/456");
-//     height: 45.6rem;
-//   }
-//   .article-preview3-img {
-//     background: center/cover no-repeat url("https://picsum.photos/492/400");
-//     height: 40rem;
-//   }
-//   .article-preview4-img {
-//     background: center/cover no-repeat url("https://picsum.photos/272/224");
-//     height: 22.4rem;
-//     width: 27.2rem;
-//     display: inline-block;
-//   }
-// }
+.text--italic {
+  font-style: italic;
+}
 
 picture {
   width: 100%;
 }
 
 img {
-  // min-height: 100%;
   min-width: 100%;
 }
 
@@ -63,11 +52,20 @@ h2 {
   @include font-size(23px, 0px, 32px);
 }
 
+.slider {
+  display: none;
+  color: white;
+  padding: 2rem 16rem 2rem 2rem;
+
+  &__title {
+    font-size: 5rem;
+  }
+}
+
 .grid-container {
   display: grid;
   margin: 5rem auto;
   width: 33.6rem;
-
   @include breakpoint(desktop) {
     width: 110rem;
   }
@@ -81,26 +79,21 @@ h2 {
   grid-template-columns: 15.6rem 16rem;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-
   @include breakpoint(desktop) {
     grid-template-columns: 20rem 34.4rem 49.2rem;
     grid-template-rows: 13.6rem 45.6rem;
     grid-column-gap: 3.2rem;
     grid-row-gap: 0;
   }
-
   &__title {
     font-weight: bolder;
-    @include font-size(23px, 0px, 32px);
     grid-row-start: 1;
     grid-column-start: 1;
-
     @include breakpoint(desktop) {
       grid-row-start: 2;
       grid-column-start: 1;
     }
   }
-
   &__item1 {
     grid-row-start: 1;
     grid-column-start: 1;
@@ -111,7 +104,6 @@ h2 {
       margin-top: 19.2rem;
     }
   }
-
   &__item2 {
     grid-row-start: 1;
     grid-column-start: 2;
@@ -120,7 +112,6 @@ h2 {
       grid-column-start: 2;
     }
   }
-
   &__item3 {
     grid-row-start: 2;
     @include breakpoint(desktop) {
@@ -128,7 +119,6 @@ h2 {
       grid-column-start: 3;
     }
   }
-
   &__item4 {
     grid-row-start: 3;
     grid-column: 1/ -1;
@@ -152,55 +142,90 @@ h2 {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 
+  &__title {
+    grid-column: -1/1;
+  }
+
   @include breakpoint(desktop) {
     grid-template-columns: repeat(3, 27.2rem) 1fr;
-    // grid-template-columns: 27.2rem 27.2rem 49.2rem;
     grid-template-rows: 17.6rem 36rem;
     grid-column-gap: 3.2rem;
     grid-row-gap: 0;
-  }
 
-  &__title {
-    grid-column: -1/1;
-
-    @include breakpoint(desktop) {
-      grid-column-start: 1;
+    &__title {
+      grid-column: 1;
     }
-  }
 
-  &__item1 {
-    @include breakpoint(desktop) {
+    &__item1 {
       grid-row-start: 2;
       grid-column-start: 1;
     }
-  }
-
-  &__item2 {
-    @include breakpoint(desktop) {
+    &__item2 {
       grid-row-start: 2;
       grid-column-start: 2;
     }
-  }
-
-  &__item3 {
-    @include breakpoint(desktop) {
+    &__item3 {
       grid-row-start: 1;
       grid-column-start: 3;
     }
-  }
-
-  &__item4 {
-    @include breakpoint(desktop) {
+    &__item4 {
       grid-row-start: 3;
       grid-column-start: 2;
     }
-  }
-
-  &__item5 {
-    @include breakpoint(desktop) {
+    &__item5 {
       grid-row-start: 3;
       grid-column-start: 3;
       grid-column-end: 3;
+    }
+  }
+}
+
+.whats-new {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  &__title {
+    grid-column: -1/1;
+  }
+  @include breakpoint(desktop) {
+    grid-template-columns: repeat(3, 27.2rem) 1fr;
+    grid-template-rows: 11.2rem 36rem 13.6rem;
+    grid-column-gap: 3.2rem;
+    grid-row-gap: 0;
+    &__title {
+      grid-column: 1;
+    }
+    &__item1 {
+      grid-row-start: 2;
+      grid-column-start: 1;
+    }
+    &__item2 {
+      grid-row-start: 2;
+      grid-column-start: 2;
+    }
+    &__item3 {
+      grid-row-start: 1;
+      grid-column-start: 3;
+    }
+    &__item4 {
+      grid-row-start: 1;
+      grid-column-start: 4;
+    }
+    &__item5 {
+      grid-row-start: 3;
+      grid-column-start: 1;
+    }
+    &__item6 {
+      grid-row-start: 4;
+      grid-column-start: 2;
+    }
+    &__item7 {
+      display: block;
+      border: 3.2rem solid goldenrod;
+      grid-row-start: 4;
+      grid-column: 3 / -1;
+      background: center/cover no-repeat url("https://picsum.photos/428/424");
+      height: 48.8rem;
     }
   }
 }
