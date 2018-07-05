@@ -56,12 +56,18 @@ h2 {
   display: none;
   color: white;
   padding: 2rem 16rem 2rem 2rem;
+  @include breakpoint(desktop) {
+    display: block;
+    border: 3.2rem solid goldenrod;
+    background: center/cover no-repeat url("https://picsum.photos/428/424");
+    height: 48.8rem;
+  }
 
   &__title {
     font-size: 5rem;
   }
 }
-
+// Pocetak Grida //
 .grid-container {
   display: grid;
   margin: 5rem auto;
@@ -141,21 +147,17 @@ h2 {
   grid-template-columns: 16rem 15.6rem;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-
   &__title {
     grid-column: -1/1;
   }
-
   @include breakpoint(desktop) {
     grid-template-columns: repeat(3, 27.2rem) 1fr;
     grid-template-rows: 17.6rem 36rem;
     grid-column-gap: 3.2rem;
     grid-row-gap: 0;
-
     &__title {
       grid-column: 1;
     }
-
     &__item1 {
       grid-row-start: 2;
       grid-column-start: 1;
@@ -220,12 +222,8 @@ h2 {
       grid-column-start: 2;
     }
     &__item7 {
-      display: block;
-      border: 3.2rem solid goldenrod;
       grid-row-start: 4;
       grid-column: 3 / -1;
-      background: center/cover no-repeat url("https://picsum.photos/428/424");
-      height: 48.8rem;
     }
   }
 }
