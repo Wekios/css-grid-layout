@@ -1,229 +1,115 @@
 body {
-  background-color: #eee;
+    background-color: #eee;
 }
+
 // ----- Wrappers
 #main {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 button {
-  background: #ddd;
-  border-radius: 1rem;
-  font-size: 2rem;
-  padding: 2rem;
-  margin-top: 2rem;
+    background: #ddd;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 2rem;
 }
 
 .text--italic {
-  font-style: italic;
+    font-style: italic;
 }
 
 picture {
-  width: 100%;
+    width: 100%;
 }
 
 img {
-  min-width: 100%;
+    width: 100%;
 }
 
-h4 {
-  font-size: 1.4rem;
-  font-weight: 900;
-  text-transform: capitalize;
-  line-height: 1.14;
-  letter-spacing: normal;
-  font-family: sans-serif;
-  padding-top: 0.9rem;
-  @include breakpoint(desktop) {
-    padding-top: 3rem;
-    font-size: 1.8rem;
-    line-height: 1.28;
-  }
-}
-
-p {
-  display: none;
+h1 {
+    @include font-size(35px, 50px, 80px);
+    text-align: center;
 }
 
 h2 {
-  @include font-size(23px, 0px, 32px);
+    @include font-size(23px, 0px, 32px);
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 1.14;
+    letter-spacing: normal;
+    font-family: sans-serif;
+    padding-top: 0.9rem;
+    @include breakpoint(desktop) {
+        padding-top: 3rem;
+        font-size: 1.8rem;
+        line-height: 1.28;
+    }
+}
+
+p {
+    display: none;
 }
 
 .slider {
-  display: none;
-  color: white;
-  padding: 2rem 16rem 2rem 2rem;
-  @include breakpoint(desktop) {
-    display: block;
-    border: 3.2rem solid goldenrod;
-    background: center/cover no-repeat url("https://picsum.photos/428/424");
-    height: 48.8rem;
-  }
-
-  &__title {
-    font-size: 5rem;
-  }
-}
-// Pocetak Grida //
-.grid-container {
-  display: grid;
-  margin: 5rem auto;
-  width: 33.6rem;
-  @include breakpoint(desktop) {
-    width: 110rem;
-  }
+    display: none;
+    color: white;
+    padding: 2rem 16rem 2rem 2rem;
+    @include breakpoint(desktop) {
+        display: block;
+        border: 3.2rem solid goldenrod;
+        background: center/cover no-repeat url("https://picsum.photos/428/424");
+        height: 48.8rem;
+    }
+    &__title {
+        font-size: 5rem;
+    }
 }
 
-.item--full {
-  grid-column: 1 / -1;
+.header {
+    padding: 2rem;
+    background: #ddd;
 }
 
-.news-week {
-  grid-template-columns: 15.6rem 16rem;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  @include breakpoint(desktop) {
-    grid-template-columns: 20rem 34.4rem 49.2rem;
-    grid-template-rows: 13.6rem 45.6rem;
-    grid-column-gap: 3.2rem;
-    grid-row-gap: 0;
-  }
-  &__title {
-    font-weight: bolder;
-    grid-row-start: 1;
-    grid-column-start: 1;
+.sidebar {
+    display: grid;
+    background: white;
+    justify-content: center;
+    align-items: center;
     @include breakpoint(desktop) {
-      grid-row-start: 2;
-      grid-column-start: 1;
+      border: 1rem solid blanchedalmond;
     }
-  }
-  &__item1 {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    margin-top: 8rem;
-    @include breakpoint(desktop) {
-      grid-row-start: 2;
-      grid-column-start: 1;
-      margin-top: 19.2rem;
+    img {
+        width: 50px;
+        grid-column: 1/-1;
+        @include breakpoint(desktop) {
+            width: 100px;
+        }
     }
-  }
-  &__item2 {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    @include breakpoint(desktop) {
-      grid-row-start: 2;
-      grid-column-start: 2;
-    }
-  }
-  &__item3 {
-    grid-row-start: 2;
-    @include breakpoint(desktop) {
-      grid-row-start: 1;
-      grid-column-start: 3;
-    }
-  }
-  &__item4 {
-    grid-row-start: 3;
-    grid-column: 1/ -1;
+}
+
+.footer {
     display: flex;
-    @include breakpoint(desktop) {
-      grid-row-start: 3;
-      grid-column-start: 3;
-      margin-top: 1.6rem;
+    background-color: cadetblue;
+    color: #eee;
+    padding: 1rem 2rem;
+    justify-content: space-evenly;
+    p {
+        display: inline;
+        font-size: 2em;
     }
-    h4 {
-      padding: 0 0.3rem 0 1rem;
-      @include breakpoint(desktop) {
-        padding: 0 1rem 0 3rem;
-      }
+    img {
+        width: inherit;
     }
-  }
 }
 
-.my-business {
-  grid-template-columns: 16rem 15.6rem;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  &__title {
-    grid-column: -1/1;
-  }
-  @include breakpoint(desktop) {
-    grid-template-columns: repeat(3, 27.2rem) 1fr;
-    grid-template-rows: 17.6rem 36rem;
-    grid-column-gap: 3.2rem;
-    grid-row-gap: 0;
-    &__title {
-      grid-column: 1;
-    }
-    &__item1 {
-      grid-row-start: 2;
-      grid-column-start: 1;
-    }
-    &__item2 {
-      grid-row-start: 2;
-      grid-column-start: 2;
-    }
-    &__item3 {
-      grid-row-start: 1;
-      grid-column-start: 3;
-    }
-    &__item4 {
-      grid-row-start: 3;
-      grid-column-start: 2;
-    }
-    &__item5 {
-      grid-row-start: 3;
-      grid-column-start: 3;
-      grid-column-end: 3;
-    }
-  }
-}
-
-.whats-new {
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  &__title {
-    grid-column: -1/1;
-  }
-  @include breakpoint(desktop) {
-    grid-template-columns: repeat(3, 27.2rem) 1fr;
-    grid-template-rows: 11.2rem 36rem 13.6rem;
-    grid-column-gap: 3.2rem;
-    grid-row-gap: 0;
-    &__title {
-      grid-column: 1;
-    }
-    &__item1 {
-      grid-row-start: 2;
-      grid-column-start: 1;
-    }
-    &__item2 {
-      grid-row-start: 2;
-      grid-column-start: 2;
-    }
-    &__item3 {
-      grid-row-start: 1;
-      grid-column-start: 3;
-    }
-    &__item4 {
-      grid-row-start: 1;
-      grid-column-start: 4;
-    }
-    &__item5 {
-      grid-row-start: 3;
-      grid-column-start: 1;
-    }
-    &__item6 {
-      grid-row-start: 4;
-      grid-column-start: 2;
-    }
-    &__item7 {
-      grid-row-start: 4;
-      grid-column: 3 / -1;
-    }
-  }
+hr {
+    margin: 5rem auto;
 }
