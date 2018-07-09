@@ -1,0 +1,52 @@
+.p-fallbacks {
+  background: whitesmoke;
+  color: #333;
+  height: 100vh;
+  @include breakpoint(desktop) {
+    padding: 3rem;
+    p {
+      font-size: 2.5rem;
+      margin: 3rem;
+    }
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    margin: 3rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+    margin: 3rem;
+  }
+  p {
+    display: block;
+    margin: 3rem;
+  }
+}
+
+#inline-block-fallback {
+  margin: 2rem auto;
+  .grid > div {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, auto);
+    width: 500px;
+  }
+
+  .grid > div {
+    background-color: #694486;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}

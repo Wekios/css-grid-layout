@@ -1,0 +1,14 @@
+.c-slider {
+  display: none;
+  color: white;
+  padding: 2rem 16rem 2rem 2rem;
+  @include breakpoint(desktop) {
+    display: block;
+    border: 3.2rem solid goldenrod;
+    background: center/cover no-repeat url("https://picsum.photos/428/424");
+    height: 48.8rem;
+  }
+  &__title {
+    font-size: 5rem;
+  }
+}

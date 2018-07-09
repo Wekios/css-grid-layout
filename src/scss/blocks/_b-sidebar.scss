@@ -1,0 +1,16 @@
+.b-sidebar {
+  display: grid;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint(desktop) {
+    border: 1rem solid blanchedalmond;
+  }
+  img {
+    width: 50px;
+    grid-column: 1/-1;
+    @include breakpoint(desktop) {
+      width: 100px;
+    }
+  }
+}

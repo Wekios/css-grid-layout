@@ -1,3 +1,15 @@
 .b-footer {
-    
+  display: flex;
+  background-color: bisque;
+  color: darkolivegreen;
+  padding: 4rem 5rem;
+  justify-content: space-evenly;
+  align-self: center;
+  p {
+    display: inline;
+    font-size: 2em;
+  }
+  img {
+    width: inherit;
+  }
 }

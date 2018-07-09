@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Css Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <script>
+        document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async></script>
+</head>
+
+<body>
+
+    <div class="p-fallbacks">
+
+        <h1>Grid “fallbacks” and overrides</h1>
+
+        <div id="inline-block-fallback">
+
+            <h2>
+                Float and clear have no effect on a grid item
+            </h2>
+            <h3>
+                If you float an item, in your CSS for non-grid browsers, when that item becomes a grid item float ceases to have any effect.
+                The clear property applied to an item that becomes a grid item also no longer takes effect.
+
+            </h3>
+
+            <p>
+                Example:
+            </p>
+
+            <div class="grid">
+                <div>One</div>
+                <div>Two</div>
+                <div>Three
+                    <br>Has
+                    <br>extra
+                    <br>content</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/master.bundle.js "></script>
+</body>
+
+</html>

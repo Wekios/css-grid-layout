@@ -1,0 +1,38 @@
+.b-my-business {
+  grid-template-columns: 16rem 15.6rem;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  &__title {
+    grid-column: -1/1;
+  }
+  @include breakpoint(desktop) {
+    grid-template-columns: repeat(3, 27.2rem) 1fr;
+    grid-template-rows: 17.6rem 36rem;
+    grid-column-gap: 3.2rem;
+    grid-row-gap: 0;
+    &__title {
+      grid-column: 1;
+    }
+    &__item1 {
+      grid-row-start: 2;
+      grid-column-start: 1;
+    }
+    &__item2 {
+      grid-row-start: 2;
+      grid-column-start: 2;
+    }
+    &__item3 {
+      grid-row-start: 1;
+      grid-column-start: 3;
+    }
+    &__item4 {
+      grid-row-start: 3;
+      grid-column-start: 2;
+    }
+    &__item5 {
+      grid-row-start: 3;
+      grid-column-start: 3;
+      grid-column-end: 3;
+    }
+  }
+}
