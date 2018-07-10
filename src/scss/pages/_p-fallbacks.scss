@@ -1,49 +1,84 @@
 .p-fallbacks {
+  font-size: 2rem;
   background: whitesmoke;
   color: #333;
   height: 100vh;
   @include breakpoint(desktop) {
     padding: 3rem;
     p {
-      font-size: 2.5rem;
-      margin: 3rem;
+      margin: 3rem 0;
     }
   }
-
   h1 {
-    font-size: 3.2rem;
+    font-size: 4rem;
   }
-
   h2 {
-    font-size: 2.8rem;
-    margin: 3rem;
+    font-size: 3rem;
+    margin: 3rem 0;
   }
-
   h3 {
-    font-size: 2.8rem;
-    margin: 3rem;
+    font-size: 2.5rem;
+    margin: 3rem 0;
   }
   p {
     display: block;
-    margin: 3rem;
+    margin: 3rem 0;
   }
 }
 
-#inline-block-fallback {
-  margin: 2rem auto;
-  .grid > div {
-    display: inline-block;
-    vertical-align: top;
+#float-fallback {
+  margin: 5rem auto;
+  .grid>div {
+    float: left;
   }
-
   .grid {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, auto);
     width: 500px;
   }
+  .grid>div {
+    background-color: #694486;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
 
-  .grid > div {
+#inline-block-fallback {
+  margin: 20rem auto;
+  .grid>div {
+    display: inline-block;
+  }
+  .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, auto);
+    width: 500px;
+  }
+  .grid>div {
+    background-color: #694486;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+#table-fallback {
+  .grid>div {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .grid {
+    border-spacing: 10px;
+  }
+  .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, auto);
+    width: 500px;
+  }
+  .grid>div {
     background-color: #694486;
     color: #fff;
     padding: 10px;

@@ -19,10 +19,11 @@
 
         <h1>Grid “fallbacks” and overrides</h1>
 
-        <div id="inline-block-fallback">
+        <div id="float-fallback">
 
             <h2>
-                Float and clear have no effect on a grid item
+                Items set to inline-block become grid items
+
             </h2>
             <h3>
                 If you float an item, in your CSS for non-grid browsers, when that item becomes a grid item float ceases to have any effect.
@@ -33,6 +34,49 @@
             <p>
                 Example:
             </p>
+
+            <div class="grid">
+                <div>One</div>
+                <div>Two</div>
+                <div>Three</div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div id="inline-block-fallback">
+
+            <h2>
+                Items set to inline-block become grid items
+            </h2>
+
+            <h3>
+                The properties associated with display: inline-block cease to apply once an item becomes a grid item.
+
+            </h3>
+
+            <div class="grid">
+                <div>One</div>
+                <div>Two</div>
+                <div>Three</div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div id="table-fallback">
+
+            <h2>
+                Items set to display: table-cell will not generate anonymous boxes
+            </h2>
+
+            <h3>
+                If you are using the CSS table values of display for your fallback layout, using display: table-cell for example will generate
+                anonymous boxes. THese boxes being the missing table element. If the items then become grid items this box
+                generation does not happen so you will not end up with anonymous boxes participating in your grid layout.
+            </h3>
 
             <div class="grid">
                 <div>One</div>

@@ -7,6 +7,7 @@
 <h4 align="center">Layout Examples & Review of the CSS Grid Layout Module Done by Diwanee Development Team <br> <a href="http://www.diwanee-serbia.rs/" target="_blank">Diwanee Serbia</a>.</h4>
 
 <p align="center">
+  <a href="#setup">Local Setup</a> •
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
   <a href="#examples">Examples</a> •
@@ -16,7 +17,13 @@
 
 <br>
 
-![screenshot](https://cdn-images-1.medium.com/max/1600/1*EW174m7OIIpJwMHkrTW3Xg.gif)
+![screenshot](https://cdn-images-1.medium.com/max/1600/1*QJZ8nT3u5zwQQhFNddtSbA.gif)
+
+<br>
+
+## Setup
+
+For installing project localy use instructions from [webedia-fe-starter](https://github.com/Demiourgos87/webedia-fe-starter) by [Bojan Knezević](https://github.com/Demiourgos87).
 
 ## Key Features
 
@@ -39,11 +46,11 @@
 - Grid Inspector for most browsers.
 - New flexible length
   - flex is a dimension with the fr unit, which represents a fraction of the leftover space in the grid container. Tracks sized with fr units are called flexible tracks as they flex in response to leftover space similar to how flex items fill space in a flex container.
-- Cross browser full support, except for well known few (Looking at you IE).
+- Cross browser support, except for well known few.
 
-  - Full support, and 87.73% global usage. Fallbacks are needed for IE11 and below.
+  - Full support for all major browsers and 87.73% global usage. Fallbacks are needed for IE11 and below.
 
-  ![alt text](/caniuse.png)
+  ![caniuse](/caniuse.png)
 
 ## How To Use
 
@@ -72,43 +79,27 @@ Note: for real in depth understanding of the grid layout [see this guide](https:
 
 ## Fallbacks
 
-## Fallbacks
+Grid does things that are pretty much impossible with older layout methods. So, in order to replicate Grid in browsers that don’t have support, you would need to do a lot of work in JavaScript. Even on a well-resourced computer, with a fast rendering engine that is likely to give you something of a janky experience as heights are calculated and items positioned. As we already know, **the browsers that don’t support grid are older**, slower browsers or browsers most often found on lower powered devices in emerging markets. Forcing a bunch of JavaScript on them is not smart. Solution?
 
-This software uses code from several open source packages.
+### BROWSERS IGNORE CSS THEY DON’T UNDERSTAND
 
-- [Electron](http://electron.atom.io/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-- [showdown](http://showdownjs.github.io/showdown/)
-- [CodeMirror](http://codemirror.net/)
+This means that you can use some old CSS, for example `floats`, <br>
+`display:inline-block`, or `display: table-cell` to provide a grid type layout for older browsers, just as you would in the past. The browsers that do not support Grid Layout will use this layout and ignore all the grid instructions.
+For more information see [this](https://rachelandrew.co.uk/css/cheatsheets/grid-fallbacks).
+
+## Resources
+
+Books, articles and tools related to _css grid module_.
+
+- [Get Ready for CSS Grid Layout
+  ](https://www.goodreads.com/book/show/28485920-get-ready-for-css-grid-layout) - book by Rachel Andrew
+- [Grid by Example](https://gridbyexample.com/) - awesome tutorial and guides
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - Grid guide on CSS-TRICKS simillar to flexbox cheatsheet.
+- [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) - MDN web docs
+- [cssgr.id](https://cssgr.id/) - An interactive CSS Grid code tool and generator
 - Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
-- [highlight.js](https://highlightjs.org/)
-
-## Related
-
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
-
-## Support
-
-<a href="https://www.buymeacoffee.com/5Zn8Xh3l9" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
-<p>Or</p>
-
-<a href="https://www.patreon.com/amitmerchant">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
-## You may also like...
-
-- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
-
-## License
-
-MIT
+- [Layoutit](https://www.layoutit.com/grid) - A CSS Grid Layout Interface Builder
 
 ---
 
-> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
-> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/amit_merchant) -->
+> [Veljko Blagojevic](http://veljkoblagojevic.com)
