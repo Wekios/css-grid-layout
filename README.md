@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<h4 align="center">Layout Examples & Review of the CSS Grid Layout Module Done by Diwanee Development Team <br> <a href="http://www.diwanee-serbia.rs/" target="_blank">Diwanee Serbia</a>.</h4>
+<h4 align="center">Review & Layout Examples of the CSS Grid Layout Module. Done by Diwanee Development Team <br> <a href="http://www.diwanee-serbia.rs/" target="_blank">Diwanee Serbia</a>.</h4>
 
 <p align="center">
   <a href="#setup">Local Setup</a> •
@@ -97,7 +97,6 @@ Books, articles and tools related to _css grid module_.
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - Grid guide on CSS-TRICKS simillar to flexbox cheatsheet.
 - [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) - MDN web docs
 - [cssgr.id](https://cssgr.id/) - An interactive CSS Grid code tool and generator
-- Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
 - [Layoutit](https://www.layoutit.com/grid) - A CSS Grid Layout Interface Builder
 
 ---
