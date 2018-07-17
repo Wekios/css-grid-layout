@@ -2,7 +2,6 @@
   font-size: 2rem;
   background: whitesmoke;
   color: #333;
-  height: 100vh;
   @include breakpoint(desktop) {
     padding: 3rem;
     p {
@@ -27,8 +26,8 @@
 }
 
 #float-fallback {
-  margin: 5rem auto;
-  .grid>div {
+  margin: 10rem auto;
+  .grid > div {
     float: left;
   }
   .grid {
@@ -37,7 +36,7 @@
     grid-template-columns: repeat(3, auto);
     width: 500px;
   }
-  .grid>div {
+  .grid > div {
     background-color: #694486;
     color: #fff;
     padding: 10px;
@@ -46,8 +45,8 @@
 }
 
 #inline-block-fallback {
-  margin: 20rem auto;
-  .grid>div {
+  margin: 10rem auto;
+  .grid > div {
     display: inline-block;
   }
   .grid {
@@ -56,7 +55,7 @@
     grid-template-columns: repeat(3, auto);
     width: 500px;
   }
-  .grid>div {
+  .grid > div {
     background-color: #694486;
     color: #fff;
     padding: 10px;
@@ -65,7 +64,8 @@
 }
 
 #table-fallback {
-  .grid>div {
+  margin: 10rem auto;
+  .grid > div {
     display: table-cell;
     vertical-align: top;
   }
@@ -78,7 +78,35 @@
     grid-template-columns: repeat(3, auto);
     width: 500px;
   }
-  .grid>div {
+  .grid > div {
+    background-color: #694486;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+#item-widths-fallback {
+  margin: 10rem auto;
+  .grid > div {
+    float: left;
+    width: 33.333%;
+  }
+
+  @supports (display: grid) {
+    .grid > div {
+      width: auto;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 500px;
+  }
+
+  .grid > div {
     background-color: #694486;
     color: #fff;
     padding: 10px;

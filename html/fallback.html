@@ -31,10 +31,6 @@
 
             </h3>
 
-            <p>
-                Example:
-            </p>
-
             <div class="grid">
                 <div>One</div>
                 <div>Two</div>
@@ -86,6 +82,31 @@
                     <br>extra
                     <br>content</div>
             </div>
+
+        </div>
+
+        <hr>
+
+        <div id="item-widths-fallback">
+
+            <h2>
+                A width applied in the fallback layout may have unintended consequences.
+            </h2>
+
+            <h3>
+                Legacy layout usually requires adding widths to items to constrain them. Even a flexbox based grid needs widths applied to
+                the individual items. Grid works by defining tracks which items are constrained by, no explicit widths on
+                items are often not desirable. These widths will usually need overwriting inside your @supports block. Setting
+                the width to auto will do the trick. Items with a percentage width inside a sized track will take their percentage
+                from the width of the track - not the grid container.
+            </h3>
+
+            <div class="grid">
+                <div>One</div>
+                <div>Two</div>
+                <div>Three</div>
+            </div>
+
 
         </div>
 
