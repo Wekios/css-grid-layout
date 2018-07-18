@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Grid Polyfill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <script>
+        document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <header class="b-header">
+            <h1>Header</h1>
+        </header>
+
+        <div class="b-sidebar">
+            <h4>Sidebar</h4>
+        </div>
+
+        <div class="b-test-block">
+
+            <h2 class="b-test-block__title"> TEST BLOCK </h2>
+
+            <div class="b-test-block__item1">
+                <picture>
+                    <source srcset="https://via.placeholder.com/600x300/e5007d/ffffff" media="(min-width: 768px)">
+                    <img srcset="https://via.placeholder.com/159x120/e5007d/ffffff" alt=" … ">
+                </picture>
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, numquam.</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. beatae sint quos.</p>
+            </div>
+
+            <div class="b-test-block__item2 ">
+
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, numquam.</h4>
+
+                <picture>
+                    <source srcset="https://via.placeholder.com/300x150/e5007d/ffffff" media="(min-width: 768px) ">
+                    <img srcset="https://via.placeholder.com/159x120/e5007d/ffffff" alt="… ">
+                </picture>
+
+            </div>
+
+            <div class="b-test-block__item3 ">
+                <picture>
+                    <source srcset="https://via.placeholder.com/92x350/ab3e8f/ffffff" media="(min-width: 768px) ">
+                    <img srcset="https://via.placeholder.com/156x126/ab3e8f/ffffff" alt="… ">
+                </picture>
+                <h4>5 Things to Know to Drive Around London.</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex labore velit corporis totam culpa delectus unde
+                    aperiam saepe? </p>
+            </div>
+
+            <div class="b-test-block__item4 ">
+                <picture>
+                    <source srcset="https://via.placeholder.com/477x200/ab3e8f/ffffff" media="(min-width: 768px) ">
+                    <img srcset="https://via.placeholder.com/120x50/ab3e8f/ffffff" alt="… ">
+                </picture>
+                <h4>Lorem ipsum dolor, sit amet consect</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex lae sint quos.</p>
+            </div>
+
+            <div class="b-test-block__item5 item--full ">
+                <picture>
+                    <source srcset="https://via.placeholder.com/586x200/5e4e9c/ffffff" media="(min-width: 768px) ">
+                    <img srcset="https://via.placeholder.com/330x120/5e4e9c/ffffff" alt="… ">
+                </picture>
+                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, numquam.</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+
+        </div>
+
+        <footer class="b-footer ">
+            <p>Contact information:
+                <a href="mailto:someone@example.com ">someone@example.com</a>.</p>
+        </footer>
+
+    </div>
+
+    <script src="js/master.bundle.js "></script>
+    <script src="js/css-polyfills.min.js"></script>
+</body>
+
+</html>

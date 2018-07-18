@@ -72,6 +72,7 @@ Note: for real in depth understanding of the grid layout [see this guide](https:
 | ------------------------- | :--------------------------------------------: |
 | _Full Page Layout Change_ |       [here](https://wekios.github.io/)        |
 | _Renault Vu blocks_       | [here](https://wekios.github.io/renault.html)  |
+| _eCommerce Responsive_    | [here](https://wekios.github.io/commerce.html) |
 | _Grid Calendar_           | [here](https://wekios.github.io/calendar.html) |
 | _Feature Query Overwrite_ | [here](https://wekios.github.io/fallback.html) |
 

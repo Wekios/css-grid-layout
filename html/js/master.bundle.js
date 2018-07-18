@@ -10348,9 +10348,16 @@ $(document).ready(function () {
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin
+    if(false) {
+      // 1531832358125
+      var cssReload = require("../../node_modules/css-hot-loader/hotModuleReplacement.js")(module.id, {"fileMap":"{fileName}"});
+      module.hot.dispose(cssReload);
+      module.hot.accept(undefined, cssReload);
+    }
+  
 
 /***/ }),
 /* 3 */
@@ -10369,3 +10376,4 @@ module.exports = function () {
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=master.bundle.js.map
